@@ -493,9 +493,21 @@ textarea:focus {
   padding: 0 !important;
 }
 
-.why_choose_head {
-  font-size: 36px;
+
+/* about-uspage start */
+.list-group-item-action:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
 }
+
+.list-group-item.active {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd;
+  color: white;
+}
+
+
+/* about-uspage end */
 
 /* animation .fab-container */
 
@@ -514,3 +526,4 @@ textarea:focus {
 .floating-animation {
   animation: floatUpDown 2.5s ease-in-out infinite;
 }
+
