@@ -22,59 +22,73 @@
 
 <body>
 
-    <!-- HEADER SECTION -->
-<header class="header">
-  <div class="container">
-    <div class="headder_top d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center py-2">
-      <div class="header_flex d-flex flex-column flex-md-row gap-2">
-        <div class="header_div">
-          <i class="fa-solid fa-phone-volume"></i>
-          <p>Phone: +91-9312-871-070</p>
+    <header class="header">
+    <div class="container">
+      <div class="headder_top">
+        <div class="header_flex">
+          <div class="header_div">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>Phone: +91-9312-871-070</p>
+          </div>
+          <div class="header_div">
+            <i class="fa-solid fa-envelope"></i>
+            <p>karan@innovacorporate.com</p>
+          </div>
         </div>
-        <div class="header_div">
-          <i class="fa-solid fa-envelope"></i>
-          <p>karan@innovacorporate.com</p>
-        </div>
+        <ul class="social_icon">
+          <div>Follow us</div>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
       </div>
-      <ul class="social_icon d-flex flex-wrap gap-2 mt-2 mt-md-0">
-        <div>Follow us</div>
-        <li><i class="fa-brands fa-facebook"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-youtube"></i></li>
-      </ul>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- NAVBAR WITH HAMBURGER -->
-<nav class="navbar navbar-expand-lg bg-white">
-  <div class="container">
-    <a class="navbar-brand logo" href="index.html">Innova Corporate (India)</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse navbars" id="mainNavbar">
-      <ul class="navbar-nav ms-auto nav_list">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <div class="enquiry_btn ms-lg-4 mt-2 mt-lg-0">
-        <button><a href="enquiry.html">Enquiry</a></button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand logo" href="index.html">Innova Corporate (India)</a>
+
+      <!-- Hamburger toggler -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas for mobile -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav nav_list">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="enquiry_btn mt-3">
+            <button><a href="enquiry.html">Enquiry</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="d-none d-lg-flex align-items-center navbar_container">
+        <ul class="nav_list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="enquiry_btn ms-3">
+          <button><a href="enquiry.html">Enquiry</a></button>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
