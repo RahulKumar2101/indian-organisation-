@@ -70,7 +70,6 @@ nav {
   height: 80px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -130,7 +129,7 @@ nav {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #000; /* underline color */
+  background-color: #000;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
@@ -149,7 +148,17 @@ nav {
   color: #000;
   text-decoration: none;
 }
-@media (max-width: 992px) {
+
+/* ------------------------------ */
+/* ✅ Responsive Styling for Mobile */
+/* ------------------------------ */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0;
+    height: auto;
+  }
+
   .headder_top {
     flex-direction: column;
     align-items: flex-start;
@@ -159,13 +168,24 @@ nav {
   .header_flex {
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    height: auto;
+    gap: 6px;
   }
 
   .social_icon {
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 6px;
+    padding-left: 0;
+  }
+
+  .social_icon div {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  nav {
+    height: auto;
   }
 
   .navbars {
@@ -182,21 +202,17 @@ nav {
 
   .nav_list {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .enquiry_btn {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo a {
-    font-size: 18px;
+    gap: 8px;
+    padding-left: 0;
+    margin-bottom: 0;
   }
 
   .nav_list li {
     font-size: 16px;
+  }
+
+  .enquiry_btn {
+    margin-left: 0;
   }
 
   .enquiry_btn button {
@@ -204,14 +220,11 @@ nav {
     font-size: 14px;
   }
 
-  .header {
-    padding: 0 10px;
-  }
-
-  nav.container {
-    padding: 0 10px;
+  .logo a {
+    font-size: 18px;
   }
 }
+
 
 .about_heading {
   padding: 20px 0;
