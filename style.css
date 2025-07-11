@@ -464,3 +464,18 @@ textarea:focus {
 .enquiry_p_0{
   padding: 0 !important;
 }
+
+/* about-uspage start */
+.list-group-item-action:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item.active {
+  background-color: #0d6efd !important;
+  border-color: #0d6efd;
+  color: white;
+}
+
+
+/* about-uspage end */
