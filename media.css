@@ -1,0 +1,112 @@
+/* For mobile devices (phones, up to 767px) */
+@media screen and (max-width: 767px) {
+  /* Your mobile styles go here */
+  .navbar_container {
+    display: none;
+  }
+  .header {
+    height: auto;
+  }
+
+  .headder_top {
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .header_flex {
+    height: auto;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .header_div {
+    font-size: 12px;
+  }
+
+  .social_icon {
+    font-size: 12px;
+  }
+
+  .logo a {
+    font-size: 22px;
+  }
+
+  .humburger_menu {
+    display: block;
+    padding-right: 25px;
+  }
+  .humburger_i i {
+    color: #000;
+    font-size: 28px;
+  }
+
+  .humburger_list {
+    height: 100vh;
+    width: 100%;
+    /* display: none; */
+    list-style: none;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    transform: translateX(-100%); /* hidden to left */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .humburger_list.close {
+    /* display: block; */
+    transform: translateX(-100%); /* hidden to left */
+  }
+
+  .humburger_list.active {
+    /* display: block; */
+    transform: translateX(0); /* slide in */
+  }
+
+  .mobile_remove i{
+    color: #fff;
+  }
+
+  .swiper-container {
+    width: 100vw;
+    height: 18vh;
+  }
+  .aboutus_container {
+    padding: 20px 0;
+  }
+  .about_right {
+    flex-direction: column;
+  }
+  .about_heading {
+    padding: 5px 0;
+  }
+  .about_heading h2 {
+    font-size: 30px;
+  }
+  .why_choose_head {
+    font-size: 30px;
+  }
+  .our_services h2 {
+    font-size: 30px;
+  }
+
+  .about_img {
+    height: auto;
+    width: 100%;
+  }
+
+  .about_details {
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  .newsletter_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
