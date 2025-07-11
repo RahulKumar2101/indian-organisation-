@@ -489,7 +489,7 @@ textarea:focus {
   padding: 0 !important;
 }
 
-<<<<<<< HEAD
+
 /* about-uspage start */
 .list-group-item-action:hover {
   background-color: #f8f9fa;
@@ -504,7 +504,7 @@ textarea:focus {
 
 
 /* about-uspage end */
-=======
+
 /* animation .fab-container */
 
 @keyframes floatUpDown {
@@ -522,4 +522,4 @@ textarea:focus {
 .floating-animation {
   animation: floatUpDown 2.5s ease-in-out infinite;
 }
->>>>>>> 049e51538f38c510f18c0d84c92bcb10565fea11
+
