@@ -149,6 +149,69 @@ nav {
   color: #000;
   text-decoration: none;
 }
+@media (max-width: 992px) {
+  .headder_top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header_flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .social_icon {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .navbars {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .navbar_container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .enquiry_btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo a {
+    font-size: 18px;
+  }
+
+  .nav_list li {
+    font-size: 16px;
+  }
+
+  .enquiry_btn button {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  .header {
+    padding: 0 10px;
+  }
+
+  nav.container {
+    padding: 0 10px;
+  }
+}
 
 .about_heading {
   padding: 20px 0;
