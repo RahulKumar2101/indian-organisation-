@@ -117,13 +117,37 @@ nav {
 }
 
 .nav_list li a {
+  position: relative;
   text-decoration: none;
   color: #000;
+  padding-bottom: 4px;
+}
+
+.nav_list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000; /* underline color */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav_list li a:hover::after {
+  transform: scaleX(1);
 }
 
 .logo {
   font-size: 22px;
   font-weight: 700;
+}
+
+.logo a {
+  color: #000;
+  text-decoration: none;
 }
 
 .about_heading {
@@ -461,6 +485,24 @@ textarea:focus {
   color: rgba(80, 106, 133, 1);
 }
 
-.enquiry_p_0{
+.enquiry_p_0 {
   padding: 0 !important;
+}
+
+/* animation .fab-container */
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-animation {
+  animation: floatUpDown 2.5s ease-in-out infinite;
 }
