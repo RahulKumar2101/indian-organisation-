@@ -139,6 +139,33 @@ nav {
 .nav_list li a:hover::after {
   transform: scaleX(1);
 }
+/* ✅ FIX 1: Hide hamburger on desktop */
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+/* ✅ FIX 2: Show hamburger only on mobile */
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+/* ✅ FIX 3: Sticky header and navbar */
+.header,
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+/* ✅ Optional: Add shadow to make it clearer when scrolling */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 .logo {
   font-size: 22px;
