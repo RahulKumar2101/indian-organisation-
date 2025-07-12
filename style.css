@@ -368,6 +368,10 @@ footer img:hover {
   transition: 0.3s ease;
 }
 
+.humburger_menu {
+  display: none;
+}
+
 /* contact  */
 
 .contact_container {
