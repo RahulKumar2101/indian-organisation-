@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="activated carbon, activated charcoal, manufacturer of activated carbon, activated carbon manufacturers, activated carbon powder and granular suppliers, Innova Corporate India" />
-<meta name="description" content="We are manufacturer, suppliers and exporters of activated carbon, activated charcoal, manufacturer of activated carbon, activated carbon plant & machinery and activated carbon powder and granular suppliers at www.activatedcarbongranular.com, Innova Corporate India" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <meta name="keywords"
+        content="activated carbon, activated charcoal, manufacturer of activated carbon, activated carbon manufacturers, activated carbon powder and granular suppliers, Innova Corporate India" />
+    <meta name="description"
+        content="We are manufacturer, suppliers and exporters of activated carbon, activated charcoal, manufacturer of activated carbon, activated carbon plant & machinery and activated carbon powder and granular suppliers at www.activatedcarbongranular.com, Innova Corporate India" /> -->
+    <meta name="keywords"
+        content="Activated Carbon, Activated Charcoal, Activated Carbon Manufacturer India, Activated Carbon Suppliers, Granular Activated Carbon, Powdered Activated Carbon, Coconut Shell Activated Carbon, Activated Carbon Exporter, Activated Carbon Plant & Machinery, Industrial Carbon Solutions, Innova Corporate India" />
+    <meta name="description"
+        content="Innova Corporate India is a leading manufacturer, supplier, and exporter of activated carbon and activated charcoal. We offer high-quality granular and powdered activated carbon, coconut shell based carbon, and activated carbon plant & machinery. Visit www.activatedcarbongranular.com for reliable industrial carbon solutions." />
 
-       <title>Activated Carbon, Granular Activated Carbon, Powder Activated Carbon, Palletised Activated Carbon, Granules, Powdered Activated Carbons, Delhi, India, Innova Corporate India</title>
+    <title>Activated Carbon, Granular Activated Carbon, Powder Activated Carbon, Palletised Activated Carbon, Granules,
+        Powdered Activated Carbons, Delhi, India, Innova Corporate India</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -70,9 +77,11 @@
 
     <nav class="container">
         <div class="navbars">
-             <div class="logo">
-                <!-- <img src="" alt=""> -->
-               <a href="index.html">Innova Corporate (India) </a>
+            <div class="logo">
+                <a href="index.html"><img src="./assets/images/logo_innova.jpg" alt="logo" width="150">
+                </a>
+
+                <!-- <a href="index.html">Innova Corporate (India) </a> -->
             </div>
 
             <div class="navbar_container">
@@ -86,8 +95,38 @@
                     <button><a href="enquiry.html">Enquiry</a></button>
                 </div>
             </div>
+
+            <div class="humburger_menu" id="hamburgerMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </nav>
+
+
+
+    <div class="mobilenav" id="mobileNav">
+        <div class="mobile_container">
+            <div class="mobile_logo">
+                <!-- <a href="index.html">Innova Corporate (India) </a> -->
+                <a href="index.html"><img src="./assets/images/logo_innova.jpg" alt="logo" width="150">
+                </a>
+
+
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="mobile_close" id="mobileClose">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <ul class="mobile_nav_list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
 
 
     <section>
@@ -99,7 +138,7 @@
         </div>
     </section>
 
- 
+
 
 
 
@@ -150,6 +189,9 @@
                             <div class="contact_input">
                                 <textarea name="" placeholder="Please enter Your message here..." rows="5" cols="47"
                                     id=""></textarea>
+                            </div>
+                            <div class="contact_input">
+                                <button>Submit</button>
                             </div>
                         </form>
                     </div>
@@ -263,6 +305,23 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburgerMenu");
+            const mobileNav = document.getElementById("mobileNav");
+            const mobileClose = document.getElementById("mobileClose");
+
+            hamburger.addEventListener("click", function () {
+                mobileNav.classList.add("active");
+            });
+
+            mobileClose.addEventListener("click", function () {
+                mobileNav.classList.remove("active");
+            });
+        });
+    </script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
