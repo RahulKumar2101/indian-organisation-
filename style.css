@@ -372,6 +372,10 @@ footer img:hover {
   display: none;
 }
 
+.mobilenav{
+  display: none;
+}
+
 /* contact  */
 
 .contact_container {
