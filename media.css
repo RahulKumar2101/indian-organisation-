@@ -1,0 +1,156 @@
+/* For mobile devices (phones, up to 767px) */
+@media screen and (max-width: 767px) {
+  /* Your mobile styles go here */
+  .navbar_container {
+    display: none;
+  }
+  .header {
+    height: auto;
+  }
+
+  .headder_top {
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .header_flex {
+    height: auto;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .header_div {
+    font-size: 12px;
+  }
+
+  .social_icon {
+    font-size: 12px;
+  }
+
+  .logo a {
+    font-size: 22px;
+  }
+
+  .humburger_menu {
+    display: block;
+    padding-right: 25px;
+  }
+
+  .humburger_menu i {
+    font-size: 22px;
+  }
+  .mobile_close i {
+    color: #000;
+    font-size: 22px;
+  }
+
+  .mobile_logo a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .mobilenav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff; /* Customize as needed */
+    z-index: 9999;
+    transition: left 0.4s ease-in-out;
+    /* padding: 20px; */
+    display: block;
+  }
+
+  /* When active */
+  .mobilenav.active {
+    left: 0;
+  }
+
+  .mobile_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .mobile_nav_list {
+    padding-top: 20px;
+    padding-left: 0;
+  }
+
+  .mobile_nav_list li {
+    padding: 20px 20px;
+    list-style: none;
+    border-bottom: 2px solid #000;
+  }
+
+  .mobile_nav_list li a {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .swiper-container {
+    width: 100vw;
+    height: 18vh;
+  }
+  .aboutus_container {
+    padding: 20px 0;
+  }
+  .about_right {
+    flex-direction: column;
+  }
+  .about_heading {
+    padding: 5px 0;
+  }
+  .about_heading h2 {
+    font-size: 30px;
+  }
+  .why_choose_head {
+    font-size: 30px;
+  }
+  .our_services h2 {
+    font-size: 30px;
+  }
+
+  .about_img {
+    height: auto;
+    width: 100%;
+  }
+
+  .about_details {
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  .newsletter_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-container {
+    padding-bottom: 30px;
+  }
+
+  .contact_banner {
+    height: 200px;
+  }
+  .contact_right {
+    margin-top: 35px;
+  }
+
+  .enquiry_p_0 .contact_left {
+    padding-left: 0;
+  }
+  .enquiry_img {
+    height: 350px;
+    width: 100%;
+  }
+  .contact_map iframe {
+    height: 350px;
+  }
+}
