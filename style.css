@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+nav {
+  background-color: #fff;
+}
+
 .no-scroll {
   overflow: hidden;
   height: 100vh;
@@ -12,7 +16,7 @@
   height: 55px;
   display: flex;
   align-items: center;
-  background-color: #212932;
+  background-color: #192d58;
 }
 
 .headder_top {
@@ -60,6 +64,7 @@ p {
   padding: 4px 8px;
   border-radius: 16px;
   list-style: none;
+  cursor: pointer;
 }
 
 .social_icon li i {
@@ -82,8 +87,9 @@ nav {
 
 .enquiry_btn button {
   padding: 7px 22px;
-  background: #212932;
+  /* background: #212932; */
   color: #fff;
+  background-color: #192d58;
   text-transform: uppercase;
   border: none;
 }
@@ -119,7 +125,7 @@ nav {
 .nav_list li a {
   position: relative;
   text-decoration: none;
-  color: #000;
+  color: #192d58;
   padding-bottom: 4px;
 }
 
@@ -166,7 +172,6 @@ nav {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .logo {
   font-size: 22px;
   font-weight: 700;
@@ -209,10 +214,12 @@ nav {
 }
 
 .about_details h2 {
+  color: #192d58;
   font-weight: 500;
 }
 
 .about_heading h2 {
+  color: #192d58;
   font-size: 36px;
   font-weight: 700;
 }
@@ -241,6 +248,7 @@ nav {
 
 .newsletter_head h2 {
   font-weight: 700;
+  color: #192d58;
 }
 .newsletter_head p {
   color: #000;
@@ -248,8 +256,9 @@ nav {
 
 .newsletter_btn button {
   padding: 10px 20px;
-  background: black;
+  /* background: black; */
   color: white;
+  background-color: #192d58;
   text-transform: uppercase;
   border: none;
 }
@@ -268,6 +277,7 @@ nav {
 }
 
 .our_services h2 {
+  color: #192d58;
   font-size: 36px;
   font-weight: 700;
 }
@@ -331,7 +341,8 @@ footer img:hover {
 }
 
 .footer-dark {
-  background-color: #1a1d21;
+  /* background-color: #1a1d21; */
+  background-color: #192d58;
 }
 
 .footer-title {
@@ -372,7 +383,7 @@ footer img:hover {
   display: none;
 }
 
-.mobilenav{
+.mobilenav {
   display: none;
 }
 
@@ -423,7 +434,8 @@ footer img:hover {
 }
 
 .contact_icon_det h4 {
-  color: rgba(80, 106, 133, 1);
+  /* color: rgba(80, 106, 133, 1); */
+  color: #192d58;
   /* color: #bf9b30; */
   font-family: "Roboto", sans-serif;
   font-style: italic;
@@ -433,7 +445,7 @@ footer img:hover {
 .contact_icon_det p {
   color: #000;
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 18px;
   /* font-family: lato; */
 }
 
@@ -444,7 +456,8 @@ footer img:hover {
 
 .contact_rh h4 {
   padding-bottom: 20px;
-  color: rgba(80, 106, 133, 1);
+  /* color: rgba(80, 106, 133, 1); */
+  color: #192d58;
   font-weight: 700;
 }
 
@@ -495,6 +508,15 @@ textarea:focus {
   background-color: transparent;
 }
 
+.contact_input button {
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  /* background: rgba(80, 106, 133, 1); */
+  background-color: #192d58;
+}
+
 /* enquiry page  */
 
 .enquiry_left {
@@ -524,7 +546,6 @@ textarea:focus {
   padding: 0 !important;
 }
 
-
 /* about-uspage start */
 .list-group-item-action:hover {
   background-color: #f8f9fa;
@@ -536,7 +557,6 @@ textarea:focus {
   border-color: #0d6efd;
   color: white;
 }
-
 
 /* about-uspage end */
 
@@ -558,3 +578,9 @@ textarea:focus {
   animation: floatUpDown 2.5s ease-in-out infinite;
 }
 
+/* hide top header  */
+
+.hide-header {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
